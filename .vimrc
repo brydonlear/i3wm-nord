@@ -4,9 +4,19 @@
 set nocompatible
 " set visualbell
 
-" enable pattern highlighting, ignorecase and incremental searching
+" Enable type file detection. Vim will be able to try to detect the type of file in use.
+filetype on
+
+" Enable plugins and load plugin for the detected file type.
+filetype plugin on
+
+" Load an indent file for the detected file type.
+filetype indent on
+
+" enable pattern highlighting, ignorecase, smartcase and incremental searching
 set hlsearch
 set ignorecase
+set smartcase
 set incsearch
 
 " activate line numbers
@@ -15,6 +25,9 @@ set relativenumber
 
 " show commands and insert mode in status bar
 set showcmd
+set showmode
+
+set nowrap
 
 " set spaces and tabs
 set tabstop=2
@@ -35,8 +48,11 @@ set ttyfast
 " better command-line completion
 set wildmenu
 
-" turn on cursor line
+" Highlight cursor line underneath the cursor horizontally.
 set cursorline
+
+" Highlight cursor line underneath the cursor vertically.
+set cursorcolumn
 
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
