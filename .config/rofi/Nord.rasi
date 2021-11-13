@@ -169,7 +169,7 @@ inputbar {
 #textbox-prompt-colon {
 	padding:0px 0px;
     expand:     false;
-    str:        "";
+    //str:        "";
     margin:     0px 0.3em 0em 0em ;
     text-color: #ffffff;
     background-color:@background-color;
