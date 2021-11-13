@@ -1,20 +1,18 @@
 
 ![screenshot](https://raw.githubusercontent.com/sarveshspatil111/i3wm-nord/main/i3wm-nord.png)
-![screenshot](https://github.com/sarveshspatil111/i3wm-nord/blob/main/Pictures/screenshots/sc1.jpg)
-![screenshot](https://github.com/sarveshspatil111/i3wm-nord/blob/main/Pictures/screenshots/rofi-thunar.jpg)
-![screenshot](https://github.com/sarveshspatil111/i3wm-nord/blob/main/Pictures/screenshots/login.jpg?raw=true)
+![screenshot](https://github.com/brydonlear/i3wm-nord/blob/main/Pictures/screenshots/nordsys.png)
+![screenshot](https://github.com/brydonlear/i3wm-nord/blob/main/Pictures/screenshots/nordrofi.png)
 
 ### Configurations
-- [i3-gaps](https://github.com/sarveshspatil111/Dotfiles/tree/main/.config/i3) (Window Manager) + [i3status](https://github.com/sarveshspatil111/Dotfiles/tree/main/.config/i3status) (Status Bar)
-- [Alacritty](https://github.com/sarveshspatil111/Dotfiles/tree/main/.config/alacritty) (Terminal)
-- [Source Code Pro](https://archlinux.org/packages/extra/any/adobe-source-code-pro-fonts/) (Font)
-- [Rofi](https://github.com/sarveshspatil111/Dotfiles/tree/main/.config/rofi) (Launcher)
+- [i3-gaps](https://github.com/brydonlear/i3wm-nord/blob/main/.config/i3/config) (Window Manager) + [i3status](https://github.com/brydonlear/i3wm-nord/blob/main/.config/i3status/config) (Status Bar)
+- [URxvt](https://github.com/brydonlear/i3wm-nord/blob/main/.Xresources) (Terminal)
+- [Iosevka](https://github.com/be5invis/iosevka) (Font)
+- [Rofi](https://github.com/brydonlear/i3wm-nord/blob/main/.config/rofi/Nord.rasi) (Launcher)
 - [Nordic Darker](https://www.gnome-look.org/p/1267246/) (Theme)
-- [NordArc](https://github.com/robertovernina/NordArc) (Icons)
-- [ZSH](https://github.com/sarveshspatil111/Dotfiles/blob/main/.zshrc) (Shell)
-- [Vim](https://github.com/sarveshspatil111/Dotfiles/blob/main/.vimrc) (Editor)
+- [NordArc](https://github.com/robertovernina/NordArc) (Icons/.Xresources colorscheme)
+- [Vim](https://github.com/brydonlear/i3wm-nord/blob/main/.vimrc) (Editor)
 - [NordTheme](https://www.nordtheme.com/) (Colorscheme)
 
 ### Wallpapers
-- [Homescreen](https://github.com/sarveshspatil111/Dotfiles/blob/main/Pictures/walls/ign-0001.png)
-- [Loginscreen](https://github.com/sarveshspatil111/Dotfiles/blob/main/Pictures/arco-login.jpg)
+- [Homescreen](https://github.com/brydonlear/i3wm-nord/blob/main/Pictures/walls/polar-wallpaper.jpg)
+- [Lockscreen](https://github.com/brydonlear/i3wm-nord/blob/main/Pictures/walls/borealis.png)
