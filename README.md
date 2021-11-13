@@ -6,7 +6,7 @@
 ### Configurations
 - [i3-gaps](https://github.com/brydonlear/i3wm-nord/blob/main/.config/i3/config) (Window Manager) + [i3status](https://github.com/brydonlear/i3wm-nord/blob/main/.config/i3status/config) (Status Bar)
 - [URxvt](https://github.com/brydonlear/i3wm-nord/blob/main/.Xresources) (Terminal)
-- [Iosevka](https://github.com/be5invis/iosevka) (Font)
+- [Iosevka](https://copr.fedorainfracloud.org/coprs/peterwu/iosevka/) (Font)
 - [Rofi](https://github.com/brydonlear/i3wm-nord/blob/main/.config/rofi/Nord.rasi) (Launcher)
 - [Nordic Darker](https://www.gnome-look.org/p/1267246/) (Theme)
 - [NordArc](https://github.com/robertovernina/NordArc) (Icons/.Xresources colorscheme)
