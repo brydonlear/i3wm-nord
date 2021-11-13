@@ -434,9 +434,9 @@ mode "$mode_gaps_outer" {
 #####################################################################################################################
 
 #if you want transparency on non-focused windows, ...
-exec_always --no-startup-id picom --config ~/.config/i3/picom.conf
-exec_always --no-startup-id nitrogen --restore
-exec_always --no-startup-id ~/.config/i3/scripts/mouse.sh
+#exec_always --no-startup-id picom --config ~/.config/i3/picom.conf
+#exec_always --no-startup-id nitrogen --restore
+#exec_always --no-startup-id ~/.config/i3/scripts/mouse.sh
 
 
 #####################################################################################################################
@@ -465,10 +465,10 @@ set $base0F #fcc09e
 #its neon blue #4666FF
 
 bar {
-   	height 25
+   	height 20
 	position top 
-    	font pango:Source Code Pro Black 11
-	status_command i3status
+    	font pango:Iosevka 10
+	status_command i3status --config ~/.config/i3/i3status.conf
     	tray_padding 1
     	strip_workspace_numbers yes
 	bindsym button4 nop
