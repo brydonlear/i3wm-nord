@@ -284,16 +284,21 @@ font pango:Iosevka
 #Authentication dialog
 # exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
+# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
+# screen before suspend. Use loginctl lock-session to lock your screen.
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+
+# NetworkManager is the most popular way to manage wireless networks on Linux,
+# and nm-applet is a desktop environment-independent system tray GUI for it.
+exec --no-startup-id nm-applet
+
+# Draw wallpaper on startup
+exec --no-startup-id nitrogen --restore
+
 
 #####################################################################################################################
 #################                          applications keyboard shortcuts                          #################
 #####################################################################################################################
-
-bindsym $mod+Return exec --no-startup-id alacritty;focus
-
-bindsym control+mod1+u exec --no-startup-id pavucontrol
-
-bindsym $mod+Shift+Return exec --no-startup-id thunar;focus
 
 bindsym Mod1+Shift+e exec --no-startup-id calibre
 
@@ -319,8 +324,8 @@ assign [class="calibre" instance="calibre-gui"] $books
 #################                          screenshots                                              #################
 #####################################################################################################################
 
-bindsym Print exec gnome-screenshot
-bindsym $mod+Print exec gnome-screenshot -i
+#bindsym Print exec gnome-screenshot
+bindsym Print exec gnome-screenshot -i
 
 
 
@@ -368,8 +373,8 @@ popup_during_fullscreen smart
 #################                          i3 gaps next                                             #################
 #####################################################################################################################
 
-for_window [class="^.*"] border pixel 1
-gaps inner 5
+for_window [class="^.*"] border pixel 2
+gaps inner 7
 gaps outer 5
 #smart_gaps on
 #smart_borders on
