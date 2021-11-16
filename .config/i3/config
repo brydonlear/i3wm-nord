@@ -30,10 +30,12 @@ set $right semicolon
 #####################################################################################################################
 #################                          Single and Dual screen                                   #################
 #####################################################################################################################
-exec --no-startup-id xrandr --output eDP-1 --mode 1920x1080 --rate 60.00 
+exec_always --no-startup-id xrandr --output eDP-1 --mode 1920x1080 --rate 60.00 
 # exec xrandr --setprovideroutputsource modesetting NVIDIA-0
-exec xrandr --auto
+exec_always xrandr --auto
 
+#toggle internal/external display
+bindsym $mod+Shift+s exec --no-startup-id ~/.config/i3/scripts/displaytoggle.sh
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -92,7 +94,7 @@ bindsym $mod+d exec "rofi -modi drun,run -show drun -theme Nord"
 #####################################################################################################################
 
 # shutdown / restart / suspend...
-#set $i3lockwall sh ~/.config/i3/lock.sh
+#set $i3lockwall sh ~/.config/i3/scripts/lock.sh
 set $i3lockwall i3lock -i ~/Pictures/borealis.png
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (CTRL+s) shutdown
 
