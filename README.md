@@ -1,7 +1,7 @@
 
 ![screenshot](https://raw.githubusercontent.com/sarveshspatil111/i3wm-nord/main/i3wm-nord.png)
-![screenshot](https://github.com/brydonlear/i3wm-nord/blob/main/Pictures/screenshots/nordsys.png)
-![screenshot](https://github.com/brydonlear/i3wm-nord/blob/main/Pictures/screenshots/nordcode.png)
+![screenshot](https://github.com/brydonlear/i3wm-nord/blob/main/Pictures/screenshots/nordicsys.png)
+![screenshot](https://github.com/brydonlear/i3wm-nord/blob/main/Pictures/screenshots/nordiccode.png)
 ![screenshot](https://github.com/brydonlear/i3wm-nord/blob/main/Pictures/screenshots/nordrofi.png)
 
 ### Configurations
@@ -15,5 +15,5 @@
 - [NordTheme](https://www.nordtheme.com/) (Colorscheme)
 
 ### Wallpapers
-- [Homescreen](https://github.com/brydonlear/i3wm-nord/blob/main/Pictures/walls/polar-wallpaper.jpg)
+- [Homescreen](https://github.com/brydonlear/i3wm-nord/blob/main/Pictures/walls/overcastglacial.jpg)
 - [Lockscreen](https://github.com/brydonlear/i3wm-nord/blob/main/Pictures/walls/borealis.png)
