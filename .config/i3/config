@@ -31,7 +31,7 @@ set $right semicolon
 #################                          Single and Dual screen                                   #################
 #####################################################################################################################
 exec_always --no-startup-id xrandr --output eDP-1 --mode 1920x1080 --rate 60.00 
-# exec xrandr --setprovideroutputsource modesetting NVIDIA-0
+exec_always xrandr --setprovideroutputsource modesetting NVIDIA-0
 exec_always xrandr --auto
 
 #toggle internal/external display
@@ -87,7 +87,8 @@ bindsym $mod+shift+d exec --no-startup-id dmenu_run -i -nb '#2E3440' -nf '#81a1c
 # start rofi full
 bindsym $mod+d exec "rofi -modi drun,run -show drun -theme Nord"
 
-
+# start URxvt
+bindsym $mod+Return exec i3-sensible-terminal
 
 #####################################################################################################################
 #################                          how to exit, logoff, suspend, ...                        #################
