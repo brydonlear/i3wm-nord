@@ -1,6 +1,7 @@
 
 ![screenshot](https://raw.githubusercontent.com/sarveshspatil111/i3wm-nord/main/i3wm-nord.png)
 ![screenshot](https://github.com/brydonlear/i3wm-nord/blob/main/Pictures/screenshots/nordsys.png)
+![screenshot](https://github.com/brydonlear/i3wm-nord/blob/main/Pictures/screenshots/nordcode.png)
 ![screenshot](https://github.com/brydonlear/i3wm-nord/blob/main/Pictures/screenshots/nordrofi.png)
 
 ### Configurations
