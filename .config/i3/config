@@ -30,7 +30,7 @@ set $right semicolon
 #####################################################################################################################
 #################                          Single and Dual screen                                   #################
 #####################################################################################################################
-exec_always --no-startup-id xrandr --output eDP-1 --mode 1920x1080 --rate 60.00 
+#exec_always --no-startup-id xrandr --output eDP-1 --mode 1920x1080 --rate 60.00 
 exec_always xrandr --setprovideroutputsource modesetting NVIDIA-0
 exec_always xrandr --auto
 
@@ -96,14 +96,14 @@ bindsym $mod+Return exec i3-sensible-terminal
 
 # shutdown / restart / suspend...
 #set $i3lockwall sh ~/.config/i3/scripts/lock.sh
-set $i3lockwall i3lock -i ~/Pictures/borealis.png
+#set $i3lockwall i3lock -i ~/Pictures/borealis.png
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (CTRL+s) shutdown
 
 mode "$mode_system" {
-    bindsym l exec --no-startup-id $i3lockwall, mode "default"
+    bindsym l exec --no-startup-id loginctl lock-session, mode "default"
     bindsym e exec --no-startup-id i3-msg exit, mode "default"
-    bindsym s exec --no-startup-id $i3lockwall && systemctl suspend, mode "default"
-    bindsym h exec --no-startup-id $i3lockwall && systemctl hibernate, mode "default"
+    bindsym s exec --no-startup-id systemctl suspend, mode "default"
+    bindsym h exec --no-startup-id systemctl hibernate, mode "default"
     bindsym r exec --no-startup-id systemctl reboot, mode "default"
     bindsym Ctrl+s exec --no-startup-id systemctl poweroff -i, mode "default"
 
@@ -289,11 +289,11 @@ font pango:Iosevka
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec_always --no-startup-id xss-lock --transfer-sleep-lock -- dm-tool switch-to-greeter
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
+#exec --no-startup-id nm-applet
 
 # Draw wallpaper on startup
 exec --no-startup-id nitrogen --restore
