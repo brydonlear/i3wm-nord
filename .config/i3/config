@@ -158,10 +158,10 @@ bindsym $mod+$up focus up
 bindsym $mod+$right focus right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+#bindsym $mod+Left focus left
+#bindsym $mod+Down focus down
+#bindsym $mod+Up focus up
+#bindsym $mod+Right focus right
 
 # move focused window
 bindsym $mod+Shift+$left move left
@@ -170,10 +170,10 @@ bindsym $mod+Shift+$up move up
 bindsym $mod+Shift+$right move right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+#bindsym $mod+Shift+Left move left
+#bindsym $mod+Shift+Down move down
+#bindsym $mod+Shift+Up move up
+#bindsym $mod+Shift+Right move right
 
 
 
@@ -198,10 +198,10 @@ bindsym $mod+Shift+Tab workspace prev
 #################                          Scratchpad                                        #################
 #####################################################################################################################
 # Make the currently focused window a scratchpad
-bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+Shift+KP_Subtract move scratchpad
 
 # Show the first scratchpad window
-bindsym $mod+minus scratchpad show
+bindsym $mod+KP_Subtract scratchpad show
 
 
 #####################################################################################################################
@@ -287,6 +287,9 @@ font pango:Iosevka
 #Authentication dialog
 # exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
+#Power manager
+exec_always --no-startup-id xfce4-power-manager
+
 #Polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 
@@ -297,6 +300,7 @@ exec_always --no-startup-id xss-lock --transfer-sleep-lock -- dm-tool switch-to-
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec_always --no-startup-id nm-applet
+#exec_always --no-startup-id firewall-applet
 
 # Draw wallpaper on startup
 exec --no-startup-id nitrogen --restore
@@ -316,7 +320,9 @@ bindsym Mod1+Shift+t exec thunderbird
 
 bindsym Mod1+Shift+b exec gnome-boxes
 
-bindsym Mod1+Shift+n exec nautilus
+bindsym Mod1+Shift+f exec Thunar
+
+
 
 # assign apps to workspaces
 assign [class="Firefox"] $web
@@ -440,7 +446,7 @@ mode "$mode_gaps_outer" {
 #####################################################################################################################
 
 #if you want transparency on non-focused windows, ...
-#exec_always --no-startup-id picom --config ~/.config/i3/picom.conf
+#exec_always --no-startup-id picom -d --config ~/.config/picom/picom.conf
 #exec_always --no-startup-id nitrogen --restore
 #exec_always --no-startup-id ~/.config/i3/scripts/mouse.sh
 
